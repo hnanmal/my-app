@@ -11,24 +11,20 @@ import {
 import Grid from '@mui/material/Grid';
 import { NewsCard } from './components/MyCard';
 
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
 function App() {
   return (
+  <div>
     <div>
-    <div style={{ padding: 20 }}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} md={4}>
-          <NewsCard />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <NewsCard />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <NewsCard />
-        </Grid>
-      </Grid>
+      <h1>Welcome to my app</h1>
+      <MyButton />
     </div>
-    </div>
-    
+  </div>
   );
 }
 
